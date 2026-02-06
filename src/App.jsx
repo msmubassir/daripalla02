@@ -49,6 +49,13 @@ export default function App() {
   const audioRef = React.useRef(null);
   const [showWelcome, setShowWelcome] = React.useState(true);
 
+  React.useEffect(() => {
+    document.body.style.overflow = showWelcome ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showWelcome]);
+
   const handleCloseWelcome = () => {
     const audio = audioRef.current;
     if (audio) {
