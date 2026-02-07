@@ -437,6 +437,33 @@ body {
   overflow: hidden;
 }
 
+.site-footer {
+  margin-top: 4px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  text-align: center;
+  background: rgba(253, 246, 231, 0.06);
+  border: 1px solid rgba(241, 197, 106, 0.24);
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.site-footer a {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 .welcome {
   position: fixed;
   inset: 0;
@@ -586,6 +613,10 @@ body {
 
   .callout {
     padding: 20px;
+  }
+
+  .site-footer {
+    font-size: 0.92rem;
   }
 }
 

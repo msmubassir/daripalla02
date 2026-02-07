@@ -228,6 +228,17 @@ export default function App() {
             </audio>
           </div>
         </section>
+
+        <footer className="site-footer">
+          <span>Developed by </span>
+          <a
+            href="https://msmubassir.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mubassir
+          </a>
+        </footer>
       </main>
     </div>
   );
